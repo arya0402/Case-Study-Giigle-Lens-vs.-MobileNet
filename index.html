@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <title>Case Study Google Lens vs. MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h2><img src="image.Google Lens.png" class="image">vs.
+            MobileNet
+        </h2>
+    </center>
+
+    <ol>
+        <div class="test_image1 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="apple.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="test_image col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="test_image2 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="bed_pillow.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="test_image3 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="bottle.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        <br>
+
+        <div class="test_image4 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="chair.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="test_image5 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="crayons.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="test_image6 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="markers.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="test_image7 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="mug.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="test_image8 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="pencils.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="test_image9 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="ruler.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="test_image10 col-xs-12">
+            <li class="col-s-4 col-xs-12">
+                <span></span>
+                <img src="scissors.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <h5 class="col-s-4 col-xs-12">
+                <span></span>
+            </h5>
+
+            <div class="mini_result">
+
+            </div>
+        </div>
+        <br>
+    </ol>
+
+    <div class="copy_right_footer">
+        Developed By Arya Patel
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
